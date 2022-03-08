@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="/css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Chivo|Overpass" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/site.webmanifest">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </head>
+
+<body>
+    <div class="nav-logo">
+    <img src="https://cdn.w600.comps.canstockphoto.com/dark-vector-anonymous-text-illustration-eps-vectors_csp75244530.jpg" width="100" height="100" alt="Logo" id="my-logo">
+    <div class="nite-btn">
+        <img src="/img/moon.svg" alt="moon icon">
+    </div>
+</div>
+
+
+<div class="button_container" id="toggle-navvy">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+        
+        <ul>
+            
+            <li>
+                <a href="satriowibowo1701.github.io/">Home</a>
+            </li>
+            
+            <li>
+                <a href="satriowibowo1701.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+        
+    </nav>
+</div>
+    <div class="journal-hero">
+        <h2 class="zarya-title">Design System</h2>
+    </div>
+    <div class="post-container">
+        <h2 id="design-sytems">Design Sytems</h2>
+<p>What&rsquo;s a design system? In my words, it is a set of components and resuable code that team&rsquo;s use to establish a brand identity and allow for more consistency and efficentcy for teams to build out pages, apps etc.</p>
+<p>I found that the company I work for is growing through some major growing pains and I am super happy to be apart of the growth. I have a chance everyday to make a big difference in our success. Both for me and the company.  We lack uniformity and the gap between the designer, the dev (me) and the marketing team is pretty big. However I was able to attend a wonderful Front-End conference as talked about in my previous post.  I gained so much insight on the future and current technology used for my career and wanted to bring it to our company. First step was to read one of the speakers, Steve Schoger, amazing book - <a href="https://refactoringui.com/">Refactoring UI</a>. What an amazing read it was.</p>
+<p>Next step was to build my own simply little design system for our company for faster build times. After doing much research I started designing and building. <a href="https://dev.to/emmawedekind/design-systems-part-i-foundations-45hd">This article</a> from my favorite Developer and huge inspiration Emma Wedekind talks about everything you need to know if you aren&rsquo;t familiar with these beasts and the benefits it can bring to your company.</p>
+<!-- raw HTML omitted -->
+<p>I am happy to announce that I have completed all by my lonesome and is going live in the coming weeks for our team. You can check out the docs on our site <a href="https://www.simplertrading.com/simpler-design/">here</a>.  Thanks for reading!</p>
+
+    </div>
+    <footer class="footer">
+  <div class="social-container">
+    <a href="satriowibowo1701.github.io"><img src="/img/instagram.svg" alt="instagram"></a>
+    <a href="satriowibowo1701.github.io"><img src="/img/twitter.svg" alt="twitter"></a>
+    <a href="satriowibowo1701.github.io"><img src="/img/github.svg" alt="github"></a>
+  </div>
+  <p>© 2022 · Built &amp; Designed by Me 😎</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+<script>
+  $('#toggle-navvy').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+
+  $(".nite-btn").on("click", () => {
+    $("body").toggleClass("dark-mode");
+  });
+</script>
+
+</body>
+
+</html>

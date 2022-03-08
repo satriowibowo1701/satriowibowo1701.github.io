@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Posts</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Chivo|Overpass" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/site.webmanifest">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </head>
+
+    <body>
+        <div class="nav-logo">
+    <img src="https://cdn.w600.comps.canstockphoto.com/dark-vector-anonymous-text-illustration-eps-vectors_csp75244530.jpg" width="100" height="100" alt="Logo" id="my-logo">
+    <div class="nite-btn">
+        <img src="/img/moon.svg" alt="moon icon">
+    </div>
+</div>
+
+
+<div class="button_container" id="toggle-navvy">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+        
+        <ul>
+            
+            <li>
+                <a href="satriowibowo1701.github.io/">Home</a>
+            </li>
+            
+            <li>
+                <a href="satriowibowo1701.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+        
+    </nav>
+</div>
+        <div class="journal-hero">
+            <h2 class="zarya-title">Posts</h2>
+        </div>
+        <div class="post-container">
+            <div class="journal-container">
+                  
+            </div>
+        </div>
+        <footer class="footer">
+  <div class="social-container">
+    <a href="satriowibowo1701.github.io"><img src="/img/instagram.svg" alt="instagram"></a>
+    <a href="satriowibowo1701.github.io"><img src="/img/twitter.svg" alt="twitter"></a>
+    <a href="satriowibowo1701.github.io"><img src="/img/github.svg" alt="github"></a>
+  </div>
+  <p>© 2022 · Built &amp; Designed by Me 😎</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+<script>
+  $('#toggle-navvy').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+
+  $(".nite-btn").on("click", () => {
+    $("body").toggleClass("dark-mode");
+  });
+</script>
+
+    </body>
+
+</html>

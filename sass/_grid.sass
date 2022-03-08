@@ -1,0 +1,51 @@
+.container
+    max-width: $container
+    padding: 0 2rem
+    margin: 0 auto
+    // border-radius: 5px
+    // box-shadow: 0px 3px 20px 2px rgba(0,0,0,0.5)
+    
+.grid-container
+    display: grid
+    padding: 6rem
+    grid-template-columns: 3fr 1fr
+    align-items: center
+    max-width: 120rem
+    margin: 0 auto
+    @media (max-width: 600px)
+        grid-template-columns: 1fr
+        text-align: center
+        padding: 2rem
+    .intro--social
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-end
+        @media (max-width: 600px)
+            flex-direction: row
+            align-items: baseline
+            justify-content: space-evenly
+            margin-top: 2.5rem
+        a
+            font-size: 3.4rem
+            color: $white
+            &:hover
+                background-color: transparent
+                opacity: 0.4
+
+.zarya-grid
+    display: grid
+    grid-gap: 3rem
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+    @media (max-width: 600px)
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+        padding: 0 2rem
+    .grid-item
+        background-color: $secondary
+        color: $white
+        border-radius: .5rem
+        .playlist-desc
+            padding: 2rem
+        img
+            width: 100%
+            border-radius: .5rem .5rem 0 0

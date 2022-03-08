@@ -1,0 +1,61 @@
+// All Blog post Styles 
+.post-body
+    background: $white
+    line-height: 1.8
+    display: grid
+    min-height: 100vh
+    grid-template-rows: auto 1fr auto
+.post-container
+    justify-self: center
+    margin: 6rem auto
+    padding: 0 2rem
+    max-width: $container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    overflow: hidden
+    h1
+        text-align: center
+        font-size: 7.6rem
+        font-family: $body-font
+        line-height: 1
+    h2
+        font-size: 4rem
+        margin-bottom: 10px
+        line-height: 1
+        text-transform: lowercase
+        @media (max-width: 600px)
+            font-size: 3.4rem
+    .post-date
+        color: #bdc3c7
+        @media (max-width: 600px)
+            font-size: 1.6rem
+    @media (max-width: 600px)
+        img
+            width: 100%
+        h1
+            font-size: 4rem
+    
+.journal-container
+    max-width: 65rem
+    margin: 6rem auto
+    padding: 0 2rem
+    h1
+        font-size: 3rem
+
+.journal-post
+    padding: 20px
+    background-color: $white
+    border-radius: 5px
+    margin-bottom: 20px
+    transition: all .15s ease
+    &:hover
+        box-shadow: 0 5px 40px -5px rgba(0, 0, 0, .1)
+.journal-hero
+    background: $background, url(/img/brock.jpg) no-repeat center center
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 10rem 0

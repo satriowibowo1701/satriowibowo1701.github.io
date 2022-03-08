@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cards Design</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="/css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Chivo|Overpass" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/site.webmanifest">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </head>
+
+<body>
+    <div class="nav-logo">
+    <img src="https://cdn.w600.comps.canstockphoto.com/dark-vector-anonymous-text-illustration-eps-vectors_csp75244530.jpg" width="100" height="100" alt="Logo" id="my-logo">
+    <div class="nite-btn">
+        <img src="/img/moon.svg" alt="moon icon">
+    </div>
+</div>
+
+
+<div class="button_container" id="toggle-navvy">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+        
+        <ul>
+            
+            <li>
+                <a href="satriowibowo1701.github.io/">Home</a>
+            </li>
+            
+            <li>
+                <a href="satriowibowo1701.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+        
+    </nav>
+</div>
+    <div class="journal-hero">
+        <h2 class="zarya-title">Cards Design</h2>
+    </div>
+    <div class="post-container">
+        
+<style>
+    #success-box {
+        background: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    }
+    #error-box {
+        background-image: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
+    }
+    #cat-box {
+        background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+    }
+    .cat-text {
+        color: #5961F9;
+    }
+    .card-box {
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px #cbcdd3;
+        perspective: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        max-width: 800px;
+        margin: 60px auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .dot {
+        width: 8px;
+        height: 8px;
+        background: #FCFCFC;
+        border-radius: 50%;
+        position: absolute;
+        top: 6%;
+        right: 6%;
+    }
+    .two {
+        right: 10%;
+        opacity: 0.5;
+    }
+    .face {
+        width: 50px;
+        height: 50px;
+        background: #e3e3e3;
+        border-radius: 50%;
+        border: 1px solid #777777;
+        animation: bounce 1s ease-in infinite;
+    }
+    .face2 {
+        width: 50px;
+        height: 50px;
+        background: #e3e3e3;
+        border-radius: 50%;
+        border: 1px solid #777777;
+        animation: roll 3s ease-in infinite;
+        position: relative;
+    }
+    .face3 {
+        animation: bounce 3s ease-in infinite;
+        position: relative;
+    }
+    .shadow {
+        width: 50px;
+        background: #777777;
+        opacity: 0.5;
+        border-radius: 50%;
+        height: 10px;
+    }
+    .message {
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+    .message h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        letter-spacing: 5px;
+        color: #fff;
+        font-weight: 700;
+    }
+    .message p {
+        font-size: 0.7em;
+        letter-spacing: 1px;
+        color: #5e5e5e;
+    }
+    .button-box {
+        background: #f7f7f7;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.3);
+        transition: all .5s ease-in-out;
+        padding: 5px 20px;
+    }
+    .button-box:hover {
+        transform: scale(1.03);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    .button-box h1 {
+        font-size: 0.7em;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    @keyframes bounce {
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    @keyframes roll {
+        0% {
+            transform: rotate(0deg);
+            left: -15%;
+        }
+        50% {
+            left: 15%;
+        }
+        100% {
+            transform: rotate(360deg);
+            left: -15%;
+        }
+    }
+</style>
+
+<div id="card-container">
+    <!-- Happy Box -->
+    <div id="success-box" class="card-box">
+        <div class="dot"></div>
+        <div class="dot two"></div>
+        <div class="face">
+            <div class="eye"></div>
+            <div class="eye right"></div>
+            <div class="mouth happy"></div>
+        </div>
+        <div class="shadow"></div>
+        <div class="message">
+            <h1 class="alert">Success!</h1>
+            <p>yay, everything is working.</p>
+        </div>
+        <button class="button-box">
+            <h1 class="green">continue</h1>
+        </button>
+    </div>
+    <!-- Sad Box -->
+    <div id="error-box" class="card-box">
+        <div class="dot"></div>
+        <div class="dot two"></div>
+        <div class="face2">
+            <div class="eye"></div>
+            <div class="eye right"></div>
+            <div class="mouth sad"></div>
+        </div>
+        <div class="shadow"></div>
+        <div class="message">
+            <h1 class="alert">Error!</h1>
+            <p>oh no, something went wrong.</p>
+        </div>
+        <button class="button-box">
+            <h1 class="red">try again</h1>
+        </button>
+    </div>
+    <!-- Kitty Box -->
+    <div id="cat-box" class="card-box">
+            <div class="dot"></div>
+            <div class="dot two"></div>
+            <div class="face3">
+                <img src="/img/Gengar2.png" alt="gengar">
+            </div>
+            <div class="shadow"></div>
+            <div class="message">
+                <h1 class="alert">Meow Time</h1>
+                <p>Time for all of the Meow's</p>
+            </div>
+            <button class="button-box">
+                <h1 class="cat-text">Click to Pet</h1>
+            </button>
+        </div>
+</div>
+    </div>
+    <footer class="footer">
+  <div class="social-container">
+    <a href="satriowibowo1701.github.io"><img src="/img/instagram.svg" alt="instagram"></a>
+    <a href="satriowibowo1701.github.io"><img src="/img/twitter.svg" alt="twitter"></a>
+    <a href="satriowibowo1701.github.io"><img src="/img/github.svg" alt="github"></a>
+  </div>
+  <p>© 2022 · Built &amp; Designed by Me 😎</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+<script>
+  $('#toggle-navvy').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+
+  $(".nite-btn").on("click", () => {
+    $("body").toggleClass("dark-mode");
+  });
+</script>
+
+</body>
+
+</html>

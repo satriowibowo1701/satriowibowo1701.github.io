@@ -1,0 +1,332 @@
+/* Base styles */
+@root:
+    --dark: rgb(30,34,39)
+    --light: #fff
+
+html
+    overflow-x: hidden
+    font-size: 10px
+    scroll-behavior: smooth
+    
+body
+    background-color: $white
+    color: $body-color
+    background-size: auto
+    // min-height: 100vh
+    line-height: 1.5
+h1,
+h2,
+h3,
+h4,
+h5 
+    font-family: $header-font
+p
+    font-family: $body-font
+    font-size: 1.8rem
+a
+    font-family: $body-font
+    color: $secondary
+    text-decoration: none
+    font-weight: 600
+    transition: all 0.2s ease-in
+    &:focus,
+    &:hover
+        background-color: $dark
+footer 
+    text-align: center
+    color: $white
+    padding: 4rem 0
+    background-color: #222
+    p
+        letter-spacing: 2px
+        color: $white
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
+    a
+        color: $white
+        margin: 0 .5rem
+        &:hover
+            background-color: transparent
+            opacity: 0.4
+
+.intro
+    background: $background, url(/img/angel.png) no-repeat center center
+    background-size: cover
+    background-attachment: fixed
+    padding: 4rem 0
+    box-shadow: 0 10px 50px rgba(0,0,0,.6)
+    height: 90vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @media (max-width: 600px)
+        background-position: center
+        background-attachment: scroll
+    h1
+        margin-bottom: 0
+    ul
+        list-style: none
+        padding: 0
+        display: flex
+        li
+            padding-left: 1.5em
+            padding-right: 1.5em
+            a
+                color: $white
+                font-size: 1em
+                letter-spacing: 2px
+    .intro--header
+        font-family: zarya
+        font-size: 10.9rem
+        color: $white
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5)
+        margin-bottom: 2rem
+        line-height: 1.2
+        @media (max-width: 600px)
+            font-size: 4em
+    .intro--subheader
+        font-size: 6rem
+        margin-top: 0
+        margin-bottom: 3rem
+        letter-spacing: 5.5px
+        font-weight: 100
+        color: $white
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5)
+        line-height: 0.8
+        @media (max-width: 600px)
+            font-size: 1.5em
+
+// skills
+
+#skills
+    .section-title
+        text-align: center
+        color: $white
+        span
+            color: $white
+    margin: 10rem 0
+    background: rgb(11,71,70);
+    background: linear-gradient(90deg, rgba(11,71,70,1) 0%, rgba(54,226,223,1) 50%);
+    transform: skewY(-5deg)
+    padding: 6rem 0
+    
+    .skills--card_container
+        display: grid
+        max-width: 140rem
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
+        grid-gap: 4rem
+        margin: 2rem auto
+        padding: 0 2rem
+        @media (max-width:600px)
+            grid-template-columns: 1fr
+        
+    .skills--card
+        box-shadow: 0 2px 15px rgba(0,0,0,.10)
+        text-align: center
+        border-radius: 2.5rem
+        background-color: $white
+        padding: 4rem
+        .dark-mode
+            background-color: $dark
+        @media (max-width: 600px)
+            padding: 2rem
+
+    .skills--title
+        font-size: 4rem
+        font-weight: 700
+        margin: 0
+
+// Hire me
+
+.hire
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%)
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%)
+    background-color: $primary
+    padding: 4em 0
+    text-align: center
+// Journal 
+#journal
+    padding: 4rem 0
+    background-color: #FAFAFA
+    .section-title
+        text-align: center
+        margin-bottom: 2rem
+    .dark-mode
+        background-color: $dark
+
+// resume
+.resume
+    background: rgb(67,191,230)
+    background: linear-gradient(180deg, rgba(67,191,230,1) 0%, rgba(34,98,119,1) 80%)
+.resume-wrapper
+    max-width: 800px
+    margin: 60px auto
+    img 
+        width: 100%
+        box-shadow: 0px 10px 44px -12px rgba(0,0,0,0.75)
+    p
+        text-align: center
+        transition: all 0.3s ease
+        &:hover
+            transform: translateY(-3px)
+    a 
+        color: $white
+        font-size: 1.2em
+        transition: all 0.3s ease
+        &:hover
+            transform: translate(10px)
+// partner 
+#partner
+    display: grid
+    grid-gap: 4rem
+    grid-template-columns: 1fr 1fr
+    margin: 4rem auto
+    max-width: 125rem
+    @media (max-width: 600px)
+        grid-template-columns: 1fr
+    img 
+        width: 100%
+        max-width: 350px
+    .grid-item
+        display: grid
+        justify-self: center
+        align-self: center
+        @media (max-width: 600px)
+            padding: 0 2rem
+            text-align: center
+
+    .section-title
+        font-size: 3rem
+        padding-bottom: 2rem
+
+// Dark Mode Activate
+.dark-mode
+    background: $dark
+    color: $white
+    .post-body
+        background: $dark
+        a 
+            color: $white
+    .post-container
+        background: $dark
+        a
+            color: $white
+        color: $white
+    .about-grid .about--desc,
+    #skills .skills--card,
+    #journal
+        background-color: $dark
+    .journal-post
+        background-color: #2d3339
+        a
+            color: $white
+
+
+.projects
+    margin: 10rem 0
+    
+.section-title
+    text-align: center
+.projects-title
+    font-size: 3rem
+.projects-subtitle
+    font-size: 2rem
+    margin: 0
+    colro: hsl(330, 96%, 35%)
+
+.close
+    background: none
+    color: $dark
+    border: 0
+    font-size: 2rem
+    padding-bottom: 2rem
+    font-family: $body-font
+
+.work-grid
+    display: grid
+    grid-gap: 3rem
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr))
+    grid-auto-rows: 25rem
+    grid-auto-flow: dense
+
+.item
+    overflow: hidden
+    display: grid
+    grid-template-columns: 1
+    grid-template-rows: 1
+    border-radius: .5rem
+    box-shadow: 0 4px 6px rgba(0,0,0,.2), 0 5px 15px rgba(0,0,0,.1)
+.item img 
+      grid-column: 1 / -1
+      grid-row: 1 / -1
+      width: 100%
+      height: 100%
+      object-fit: cover
+    
+.item_overlay 
+    background: hsla(0, 0%, 0%, .74)
+    grid-column: 1 / -1
+    grid-row: 1 / -1
+    position: relative
+    display: grid
+    justify-items: center
+    align-items: center
+    transition: 0.2s
+    transform: translateY(100%)
+
+.item_overlay button
+    border: none
+    display: inline-block
+    font-family: futura-pt, sans-serif
+    font-style: italic
+    max-width: 15rem
+    text-align: center
+    padding: 1rem 2rem
+    color: $white
+    background-color: $secondary
+    text-transform: uppercase
+    text-shadow: 0 1px 3px rgba(36,180,126,.4)
+    border-radius: 5px
+    font-weight: 700
+    letter-spacing: 0.1rem
+    font-size: 1.2rem
+    box-shadow: 0 2px 2px rgba(0,0,0,.24)
+    transition: all .2s ease-in-out
+    @media (max-width: 600px)
+        margin: 0 auto
+    &:hover
+        transform: translateY(-1px)
+        background-color: $secondary
+        box-shadow: 0 8px 8px rgba(0,0,0,.16)
+        opacity: 0.95
+
+.item:hover .item_overlay
+    transform: translateY(0)
+
+.overlay-work
+      position: fixed
+      background: rgba(0, 0, 0, 0.7)
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      display: none
+      z-index: 2
+    
+.overlay-work.open 
+    display: grid
+    align-items: center
+    justify-items: center
+
+.overlay-inner--work 
+    background: white
+    width: 700px
+    padding: 20px
+
+.overlay-work 
+    img 
+        width: 100%
+    
+// Custom Font
+@font-face 
+    font-family: zarya 
+    src: url(fonts/graffiti.otf) format('opentype')
